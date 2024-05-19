@@ -15,7 +15,7 @@ const router = require("express").Router();
 //const {getoneUser} = require("../controllers/user.controller/")
 router.route("/createUser").post(createUser);
 router.route("/registerAdmin").post(registerAdmin);
-router.route("/getUsers").get(getUsers);
+router.route("/").get(getUsers);
 router.route("/:id").get(getUser);
 router.route("/qwertyuiop/qwertyuiop").post(getUsername);
 router.route("/deleteUser/:id").delete(deleteUser);

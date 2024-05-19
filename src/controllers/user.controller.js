@@ -9,6 +9,8 @@ const path = require("path");
 const { raw } = require("body-parser");
 const nodemailer = require("nodemailer");
 const Admins = require("../models/admins");
+const Users = require("../models/users");
+const { user } = require("@nextui-org/react");
 
 exports.createUser = asyncHandler(async (req, res, next) => {
   const { username, email, phonenumber, password, usercode, address } =
