@@ -65,7 +65,7 @@ exports.createUser = asyncHandler(async (req, res, next) => {
       }
     );
 
-    const verificationUrl = `http://localhost:8001/auth/verify/${token}`;
+    const verificationUrl = `http://159.89.203.190:8001/auth/verify/${token}`;
 
     let transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
