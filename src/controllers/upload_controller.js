@@ -14,7 +14,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage }).single("image");
 
-exports.uploadProfile = (req, res) => {
+exports.uploadCount = (req, res) => {
   upload(req, res, async (err) => {
     if (err) {
       return res

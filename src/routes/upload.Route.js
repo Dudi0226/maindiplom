@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const { uploadProfile } = require("../controllers/upload_controller");
+const { uploadCount } = require("../controllers/upload_controller");
 const { protect } = require("../middleware/protect");
 
-router.route("/uploadImage").post(protect, uploadProfile);
+router.route("/uploadImage").post(protect, uploadCount);
 
 module.exports = router;
